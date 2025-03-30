@@ -16,7 +16,7 @@ const services = [
       "Building code compliance",
       "Construction documentation",
     ],
-    image: "/service1.jpg",
+    image: "/images/services/service1.jpg",
   },
   {
     id: 2,
@@ -30,7 +30,7 @@ const services = [
       "Lighting design",
       "Color scheme development",
     ],
-    image: "/service2.jpg",
+    image: "/images/services/service2.jpg",
   },
   {
     id: 3,
@@ -44,7 +44,7 @@ const services = [
       "Quality assurance",
       "Risk management",
     ],
-    image: "/service3.jpg",
+    image: "/images/services/service3.jpg",
   },
   {
     id: 4,
@@ -58,7 +58,7 @@ const services = [
       "Energy efficiency improvements",
       "Heritage compliance",
     ],
-    image: "/service4.jpg",
+    image: "/images/services/service4.jpg",
   },
 ];
 
@@ -69,7 +69,7 @@ export default function Services() {
       <section className="relative h-[40vh] flex items-center">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/services-hero.jpg"
+            src="/images/services/services-hero.jpg"
             alt="Our Services"
             fill
             className="object-cover"
