@@ -275,12 +275,12 @@ const services = [
 const projects = [
   {
     title: "Modern Residence",
-    location: "Beverly Hills, CA",
+    location: "Guiwan, Zamboanga City",
     image: "/images/projects/residential/residential1.jpg",
   },
   {
     title: "Corporate Headquarters",
-    location: "San Francisco, CA",
+    location: "Ipil, Zamboanga Sibugay",
     image: "/images/projects/commercial/commercial1.jpg",
   },
 ];

@@ -18,22 +18,22 @@ export default function Contact() {
   const officeLocations = [
     {
       title: 'Main Office',
-      address: 'Address 1: 123 Architecture Street, Design District, CA 90210',
-      email: 'main@ae-architect.com',
-      phone: '(555) 123-4567'
+      address: 'Address 1: Tetuan Zamboanga Sibugay',
+      email: 'ae.architect@gmail.com.com',
+      phone: '0936-245-3222 / 0928-544-8889'
     },
-    {
-      title: 'Design Studio',
-      address: 'Address 2: 456 Creative Avenue, Innovation Park, CA 90211',
-      email: 'design@ae-architect.com',
-      phone: '(555) 234-5678'
-    },
-    {
-      title: 'Project Office',
-      address: 'Address 3: 789 Project Plaza, Development Zone, CA 90212',
-      email: 'projects@ae-architect.com',
-      phone: '(555) 345-6789'
-    }
+    // {
+    //   title: 'Design Studio',
+    //   address: 'Address 2: 456 Creative Avenue, Innovation Park, CA 90211',
+    //   email: 'design@ae-architect.com',
+    //   phone: '(555) 234-5678'
+    // },
+    // {
+    //   title: 'Project Office',
+    //   address: 'Address 3: 789 Project Plaza, Development Zone, CA 90212',
+    //   email: 'projects@ae-architect.com',
+    //   phone: '(555) 345-6789'
+    // }
   ];
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {

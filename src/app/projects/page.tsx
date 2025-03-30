@@ -8,7 +8,7 @@ const projects = [
   {
     id: 1,
     title: "Modern Residence",
-    location: "Beverly Hills, CA",
+    location: "Guiwan, Zamboanga City",
     image: "/images/projects/residential/residential1.jpg",
     category: "Residential",
     year: "2023",
@@ -23,7 +23,7 @@ const projects = [
   {
     id: 2,
     title: "Corporate Headquarters",
-    location: "San Francisco, CA",
+    location: "Ipil, Zamboanga Sibugay",
     image: "/images/projects/commercial/commercial1.jpg",
     category: "Commercial",
     year: "2023",
@@ -34,7 +34,7 @@ const projects = [
   {
     id: 3,
     title: "Urban Loft",
-    location: "New York, NY",
+    location: "Pagadian City",
     image: "/images/projects/residential/residential2.jpg",
     category: "Residential",
     year: "2022",
@@ -49,7 +49,7 @@ const projects = [
   {
     id: 4,
     title: "Cultural Center",
-    location: "Chicago, IL",
+    location: "Ayala, Zamboanga City",
     image: "/images/projects/urban/urban1.jpg",
     category: "Cultural",
     year: "2022",
