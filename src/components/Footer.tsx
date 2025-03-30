@@ -11,7 +11,7 @@ const Footer = () => {
           <div>
             <h3 className="text-white text-lg font-semibold mb-4">AE Architect</h3>
             <p className="text-sm">
-              Creating innovative and sustainable architectural solutions for tomorrow's world.
+              Creating innovative and sustainable architectural solutions for tomorrow&apos;s world.
             </p>
           </div>
 
