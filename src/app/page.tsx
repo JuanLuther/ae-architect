@@ -276,11 +276,11 @@ const projects = [
   {
     title: "Modern Residence",
     location: "Beverly Hills, CA",
-    image: "/project1.jpg",
+    image: "/images/projects/residential/residential1.jpg",
   },
   {
     title: "Corporate Headquarters",
     location: "San Francisco, CA",
-    image: "/project2.jpg",
+    image: "/images/projects/commercial/commercial1.jpg",
   },
 ];
