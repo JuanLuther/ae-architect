@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
-import Image from 'next/image';
+// import Image from 'next/image';
 import HeroSection from '@/components/HeroSection';
 import Container from '@/components/Container';
 import Section from '@/components/Section';
