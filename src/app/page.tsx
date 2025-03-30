@@ -69,8 +69,8 @@ export default function Home() {
               transition={{ duration: 0.8 }}
             >
               <p className="text-lg text-gray-600 mb-6">
-                With over two decades of experience, we&apos;ve established
-                ourselves as a leading architectural firm known for our
+                With over 7 years of experience, we&apos;ve established
+                ourselves as a leading architectural firm in Region 9 known for our
                 innovative designs and commitment to excellence. Our team of
                 passionate architects and designers work together to create
                 spaces that inspire and endure.
