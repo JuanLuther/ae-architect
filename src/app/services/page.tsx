@@ -157,7 +157,7 @@ export default function Services() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-gray-600 mb-8 max-w-2xl mx-auto"
           >
-            Let's discuss how we can help bring your architectural vision to
+            Let&apos;s discuss how we can help bring your architectural vision to
             life. Contact us today for a consultation.
           </motion.p>
           <motion.a
