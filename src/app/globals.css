@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-rgb: 255, 255, 255;
+  --primary-color: #2d3436;
+  --accent-color: #00b894;
+  --secondary-color: #0984e3;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-rgb));
+}
+
+@layer base {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-playfair);
+  }
+}
+
+@layer components {
+  .container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .btn-primary {
+    @apply bg-[#00B894] text-white px-6 py-3 rounded-none hover:bg-[#00A187] transition-colors duration-300;
+  }
+
+  .section-title {
+    @apply text-4xl md:text-5xl mb-8;
+    font-family: var(--font-playfair);
+    color: #2d3436;
+  }
+
+  .nav-link {
+    @apply text-gray-600 hover:text-[#00B894] transition-colors duration-300;
+  }
+
+  .gradient-text {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-[#00B894] to-[#0984E3];
+  }
+}
