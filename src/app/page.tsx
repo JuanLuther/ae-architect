@@ -3,6 +3,7 @@
 import Image from "next/image";
 import ServiceCard from "@/components/ServiceCard";
 import { motion } from "framer-motion";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 export default function Home() {
   return (
