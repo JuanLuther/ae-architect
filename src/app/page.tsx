@@ -38,16 +38,15 @@ export default function Home() {
             Creating innovative architectural solutions that blend form,
             function, and sustainability.
           </motion.p>
-          <a href="/projects">
-            <motion.button
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.4 }}
-              className="btn-primary shadow-lg hover:shadow-xl transition-all duration-300"
-            >
-                View Our Projects
-            </motion.button>
-          </a>
+          <motion.a
+            href="/projects"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+            className="btn-primary shadow-lg hover:shadow-xl transition-all duration-300 inline-block px-6 py-3 text-white bg-blue-600 rounded-lg"
+          >
+            View Our Projects
+          </motion.a>
         </div>
       </section>
 
