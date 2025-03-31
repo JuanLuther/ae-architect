@@ -38,14 +38,16 @@ export default function Home() {
             Creating innovative architectural solutions that blend form,
             function, and sustainability.
           </motion.p>
-          <motion.button
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
-            className="btn-primary shadow-lg hover:shadow-xl transition-all duration-300"
-          >
-            View Our Projects
-          </motion.button>
+          <a href="/projects">
+            <motion.button
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.4 }}
+              className="btn-primary shadow-lg hover:shadow-xl transition-all duration-300"
+            >
+                View Our Projects
+            </motion.button>
+          </a>
         </div>
       </section>
 
@@ -198,7 +200,9 @@ export default function Home() {
               Ready to start your next architectural project? Contact us to
               discuss your vision.
             </p>
-            <button className="btn-primary">Contact Us</button>
+            <a href="/contact" className="btn-primary">
+              Contact Us
+            </a>
           </motion.div>
         </div>
       </section>

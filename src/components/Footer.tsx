@@ -41,9 +41,8 @@ const Footer = () => {
           <div>
             <h3 className="text-white text-lg font-semibold mb-4">Contact</h3>
             <ul className="space-y-2">
-              <li>123 Architecture Street</li>
-              <li>Design District, City 12345</li>
-              <li>Phone: (123) 456-7890</li>
+              <li>Tetuan, Zamboanga City</li>
+              <li>Phone: 0936-245-3222 / 0928-544-8889</li>
               <li>Email: info@aearchitect.com</li>
             </ul>
           </div>
@@ -51,7 +50,11 @@ const Footer = () => {
 
         {/* Social Links & Copyright */}
         <div className="mt-8 pt-8 border-t border-gray-700">
+          <div className="text-sm mb-4">
+            Created by <a className='underline  hover:text-blue-300' href="https://juanluther.github.io/portfolio-vanilla/" target="_blank" rel="noopener noreferrer">JerickDale</a>
+          </div>
           <div className="flex flex-col md:flex-row justify-between items-center">
+            
             <div className="text-sm">
               © {currentYear} AE Architect. All rights reserved.
             </div>

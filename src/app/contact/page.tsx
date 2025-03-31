@@ -18,7 +18,7 @@ export default function Contact() {
   const officeLocations = [
     {
       title: 'Main Office',
-      address: 'Address 1: Tetuan Zamboanga Sibugay',
+      address: 'Tetuan, Zamboanga City',
       email: 'ae.architect@gmail.com.com',
       phone: '0936-245-3222 / 0928-544-8889'
     },
