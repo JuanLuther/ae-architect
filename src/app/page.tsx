@@ -7,11 +7,13 @@ import { SpeedInsights } from "@vercel/speed-insights/next"
 
 export default function Home() {
   return (
-    <main className="min-h-screen">
-      {/* Hero Section */}
-      <section className="relative h-screen flex items-center">
-        <div className="absolute inset-0 z-0">
-          <Image
+    <>
+      <SpeedInsights />
+      <main className="min-h-screen">
+        {/* Hero Section */}
+        <section className="relative h-screen flex items-center">
+          <div className="absolute inset-0 z-0">
+            <Image
             src="/hero-image.jpg"
             alt="Modern Architecture"
             fill
@@ -206,7 +208,8 @@ export default function Home() {
           </motion.div>
         </div>
       </section>
-    </main>
+      </main>
+    </>
   );
 }
 
