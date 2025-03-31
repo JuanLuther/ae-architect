@@ -3,12 +3,10 @@
 import Image from "next/image";
 import ServiceCard from "@/components/ServiceCard";
 import { motion } from "framer-motion";
-import { SpeedInsights } from "@vercel/speed-insights/next"
+
 
 export default function Home() {
   return (
-    <>
-      <SpeedInsights />
       <main className="min-h-screen">
         {/* Hero Section */}
         <section className="relative h-screen flex items-center">
@@ -209,7 +207,6 @@ export default function Home() {
         </div>
       </section>
       </main>
-    </>
   );
 }
 
