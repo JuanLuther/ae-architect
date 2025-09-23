@@ -21,8 +21,16 @@ export default function Navigation() {
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
-          <Link href="/" className="text-2xl font-playfair">
-            AE Architect
+          <Link
+            href="/"
+            className="text-2xl font-playfair flex items-center font-bold space-x-2"
+          >
+            <img
+              src="ae2018.jpg"
+              alt="AE Architect Logo"
+              className="h-16 rounded-full"
+            />
+            <p>AE Architect</p>
           </Link>
 
           {/* Desktop Navigation */}
