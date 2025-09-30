@@ -26,7 +26,7 @@ export default function Navigation() {
             className="text-2xl font-playfair flex items-center font-bold space-x-2"
           >
             <img
-              src="ae2018.jpg"
+              src="ae.svg"
               alt="AE Architect Logo"
               className="h-16 rounded-full"
             />
