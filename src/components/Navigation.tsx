@@ -4,10 +4,6 @@ import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { usePathname } from "next/navigation";
 
-interface NavigationProps {
-  currentPath?: string;
-}
-
 export default function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
