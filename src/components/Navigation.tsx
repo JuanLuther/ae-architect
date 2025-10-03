@@ -28,7 +28,13 @@ export default function Navigation() {
             href="/"
             className="flex items-center space-x-3 group transition-transform "
           >
-            <Image src="/aetext.svg" alt="AE Architect" className="h-12" />
+            <Image
+              src="/aetext.svg"
+              alt="AE Architect"
+              width={150}
+              height={80}
+              className="h-12 w-auto"
+            />
           </Link>
 
           {/* Desktop Navigation */}
