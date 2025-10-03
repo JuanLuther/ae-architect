@@ -1,94 +1,89 @@
 "use client";
 
 import { useState } from "react";
+import { Menu, X } from "lucide-react";
 import { usePathname } from "next/navigation";
-import Link from "next/link";
+
+interface NavigationProps {
+  currentPath?: string;
+}
 
 export default function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const pathname = usePathname(); // Get the current route
 
   const links = [
-    { href: "/", label: "Home" },
-    { href: "/projects", label: "Projects" },
-    { href: "/services", label: "Services" },
-    { href: "/about", label: "About" },
-    { href: "/contact", label: "Contact" },
+    { href: "/", label: "HOME" },
+    { href: "/projects", label: "PROJECTS" },
+    { href: "/services", label: "SERVICES" },
+    { href: "/about", label: "ABOUT" },
+    { href: "/contact", label: "CONTACT" },
   ];
 
+  const isActive = (href: string) => usePathname() === href;
+
   return (
-    <nav className="fixed w-full z-50 bg-white/90 backdrop-blur-sm shadow-md">
-      <div className="container mx-auto px-4">
-        <div className="flex justify-between items-center h-20">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-200 shadow-sm">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-between items-center">
           {/* Logo */}
-          <Link
+          <a
             href="/"
-            className="text-2xl font-playfair flex items-center font-bold space-x-2"
+            className="flex items-center space-x-3 group transition-transform "
           >
-            <img
-              src="ae.svg"
-              alt="AE Architect Logo"
-              className="h-16 rounded-full"
-            />
-            <p>AE Architect</p>
-          </Link>
+            <img src="/aetext.svg" alt="AE Architect" className="h-12" />
+          </a>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex space-x-8">
+          <div className="hidden md:flex items-center space-x-1">
             {links.map(({ href, label }) => (
-              <Link
+              <a
                 key={href}
                 href={href}
-                className={`nav-link px-2 py-1 transition-all ${
-                  pathname === href
-                    ? "text-blue-600 font-semibold border-b-2 border-blue-600"
-                    : "text-gray-700 hover:text-blue-500"
+                className={`relative px-4 py-2 text-sm font-medium  transition-all duration-200  border-b ${
+                  isActive(href)
+                    ? "text-blue-600 bg-blue-50 border-blue-600"
+                    : "text-gray-700 hover:bg-blue-50 hover:text-blue-600  hover:border-blue-600 border-transparent "
                 }`}
               >
                 {label}
-              </Link>
+                {/* {isActive(href) && (
+                  <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-1.5 h-1.5 bg-blue-600 rounded-full" />
+                )} */}
+              </a>
             ))}
           </div>
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
+            className="md:hidden p-2 rounded-lg text-gray-700 hover:bg-gray-100 transition-colors"
+            aria-label="Toggle menu"
           >
-            <svg
-              className="w-6 h-6"
-              fill="none"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              {isMenuOpen ? (
-                <path d="M6 18L18 6M6 6l12 12" />
-              ) : (
-                <path d="M4 6h16M4 12h16M4 18h16" />
-              )}
-            </svg>
+            {isMenuOpen ? (
+              <X className="w-6 h-6" />
+            ) : (
+              <Menu className="w-6 h-6" />
+            )}
           </button>
         </div>
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden py-4">
-            <div className="flex flex-col space-y-4">
+          <div className="md:hidden py-4 border-t border-gray-100">
+            <div className="flex flex-col space-y-1">
               {links.map(({ href, label }) => (
-                <Link
+                <a
                   key={href}
                   href={href}
-                  className={`px-4 py-2 transition-all ${
-                    pathname === href
-                      ? "text-blue-600 font-semibold border-l-4 border-blue-600 pl-3"
-                      : "text-gray-700 hover:text-blue-500"
+                  className={`px-4 py-3 text-sm font-medium  transition-all duration-200 ${
+                    isActive(href)
+                      ? "text-blue-600 bg-blue-50 border-l-4 border-blue-600"
+                      : "text-gray-700 hover:bg-gray-50 border-l-4 border-transparent"
                   }`}
+                  onClick={() => setIsMenuOpen(false)}
                 >
                   {label}
-                </Link>
+                </a>
               ))}
             </div>
           </div>

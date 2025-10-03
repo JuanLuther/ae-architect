@@ -3,15 +3,15 @@
 import Image from "next/image";
 import ServiceCard from "@/components/ServiceCard";
 import { motion } from "framer-motion";
-
+import { CTA1 } from "@/components/cta/CTA1";
 
 export default function Home() {
   return (
-      <main className="min-h-screen">
-        {/* Hero Section */}
-        <section className="relative h-screen flex items-center">
-          <div className="absolute inset-0 z-0">
-            <Image
+    <main className="min-h-screen">
+      {/* Hero Section */}
+      <section className="min-h-screen relative h-screen flex items-center">
+        <div className="absolute inset-0 z-0">
+          <Image
             src="/hero-image.jpg"
             alt="Modern Architecture"
             fill
@@ -71,18 +71,20 @@ export default function Home() {
               transition={{ duration: 0.8 }}
             >
               <p className="text-lg text-gray-600 mb-6">
-                With over 7 years of experience, we&apos;ve established
-                ourselves as a leading architectural firm in Region 9 known for our
-                innovative designs and commitment to excellence. Our team of
-                passionate architects and designers work together to create
-                spaces that inspire and endure.
+                AE Architects & Engineers was established in the year 2019 by
+                the group of architects; Loquillano, Vega and Suficiencia
+                Associated with the engineers. We already handled different
+                types of projects such as Residential and Commercial projects
+                for four years. Our primary line of work are Design and
+                Construction. We also provide technical support services for our
+                formworks clients.
               </p>
               <p className="text-lg text-gray-600">
-                We believe in sustainable architecture that respects both the
-                environment and the human experience. Each project is approached
-                with a unique perspective, ensuring that our designs are not
-                just buildings, but lasting contributions to the built
-                environment.
+                Before AE firm, the team was involved in different major
+                companies until we decided to build our own. Since it is an
+                establishment, we assertively led AE Firm, making our reputation
+                as a dependable provider of quality design and construction
+                services.
               </p>
             </motion.div>
             <motion.div
@@ -178,35 +180,8 @@ export default function Home() {
       </section>
 
       {/* Contact Section */}
-      <section className="py-20 bg-gradient-to-b from-[#F5F6FA] to-white">
-        <div className="container">
-          <motion.h2
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-            className="section-title"
-          >
-            Get in Touch
-          </motion.h2>
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-            className="max-w-2xl mx-auto text-center"
-          >
-            <p className="text-lg text-gray-600 mb-8">
-              Ready to start your next architectural project? Contact us to
-              discuss your vision.
-            </p>
-            <a href="/contact" className="btn-primary">
-              Contact Us
-            </a>
-          </motion.div>
-        </div>
-      </section>
-      </main>
+      <CTA1 />
+    </main>
   );
 }
 
