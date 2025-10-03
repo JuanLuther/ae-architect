@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { usePathname } from "next/navigation";
@@ -27,7 +28,7 @@ export default function Navigation() {
             href="/"
             className="flex items-center space-x-3 group transition-transform "
           >
-            <img src="/aetext.svg" alt="AE Architect" className="h-12" />
+            <Image src="/aetext.svg" alt="AE Architect" className="h-12" />
           </Link>
 
           {/* Desktop Navigation */}
