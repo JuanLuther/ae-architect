@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import ServiceCard from "@/components/ServiceCard";
 import { motion } from "framer-motion";
 import { CTA1 } from "@/components/cta/CTA1";
