@@ -24,13 +24,12 @@ export default function Navigation() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           {/* Logo */}
-          <Link href="/">
+          <Link href="/" className="relative h-12 w-[230px]">
             <Image
               src="/aetext.svg"
               alt="AE Architect"
-              width={778}
-              height={90}
-              className="h-12 w-fit"
+              fill
+              className="object-contain"
             />
           </Link>
 
