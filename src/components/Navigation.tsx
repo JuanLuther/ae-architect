@@ -30,7 +30,7 @@ export default function Navigation() {
               alt="AE Architect"
               width={778}
               height={90}
-              className="h-12 w-auto"
+              className="h-12 w-fit"
             />
           </Link>
 

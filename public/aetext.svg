@@ -10,6 +10,9 @@
    xml:space="preserve"
    inkscape:version="1.4.2 (f4327f4, 2025-05-13)"
    sodipodi:docname="aetext.svg"
+   inkscape:export-filename="aetext.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -57,7 +60,8 @@
        visible="false" /></sodipodi:namedview><defs
      id="defs1" /><g
      id="g12"
-     transform="matrix(1.6593575,0,0,1.6593573,-131.33075,-62.181747)"><g
+     transform="matrix(1.6593575,0,0,1.6593573,-131.33075,-62.181747)"
+     sodipodi:insensitive="true"><g
        id="g1"
        transform="matrix(0.04677917,0,0,0.04677917,72.117377,35.119566)"
        style="display:inline"
