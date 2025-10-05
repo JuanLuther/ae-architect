@@ -31,9 +31,9 @@ export default function Navigation() {
             <Image
               src="/aetext.svg"
               alt="AE Architect"
-              width={150}
-              height={80}
-              className="h-12 w-auto"
+              width={778}
+              height={90}
+              className="h-12 w-auto max-w-full"
             />
           </Link>
 
