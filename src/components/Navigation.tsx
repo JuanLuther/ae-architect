@@ -29,7 +29,7 @@ export default function Navigation() {
             className="flex items-center space-x-3 group transition-transform "
           >
             <Image
-              src="/aetext.svg"
+              src="/aetext.png"
               alt="AE Architect"
               width={778}
               height={90}
