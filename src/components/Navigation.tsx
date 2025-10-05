@@ -26,7 +26,7 @@ export default function Navigation() {
           {/* Logo */}
           <Link href="/" className="relative h-12 w-[230px]">
             <Image
-              src="/aetext.svg"
+              src="/aetext-plain.svg"
               alt="AE Architect"
               fill
               className="object-contain"
